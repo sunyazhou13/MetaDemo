@@ -34,7 +34,8 @@
     
     
     NSError *error = nil;
-    NSArray *items = [fileManager contentsOfDirectoryAtPath:mediasPath error:&error];
+    NSArray *items = [fileManager contentsOfDirectoryAtURL:[NSURL URLWithString:mediasPath] includingPropertiesForKeys:@[NSURLNameKey, NSURLEffectiveIconKey] options:NSDirectoryEnumerationSkipsHiddenFiles error:&error];
+//    NSArray *items = [fileManager contentsOfDirectoryAtPath:mediasPath error:&error];
     [items enumerateObjectsUsingBlock:^(NSURL *url, NSUInteger idx, BOOL *stop) {
         [self.urls addObject:url];
     }];
@@ -59,13 +60,16 @@
     if (cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.textLabel.text = self.urls[indexPath.row];
+    cell.textLabel.text = [self.urls[indexPath.row] lastPathComponent];
     return cell;
     
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSURL *url = [self.urls objectAtIndex:indexPath.row];
+    NSLog(@"%@",url);
+    
     MetaDataViewController *metaVC = [[MetaDataViewController alloc] initWithNibName:NSStringFromClass([MetaDataViewController class]) bundle:[NSBundle mainBundle]];
     [self.navigationController showViewController:metaVC sender:self];
 }

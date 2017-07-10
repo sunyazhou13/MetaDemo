@@ -158,8 +158,8 @@
 				TargetAttributes = {
 					3F4B9E961EF67A110010C4DE = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 2CD9DJMEZS;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = ZGJ54Q7R45;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -376,14 +376,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2CD9DJMEZS;
+				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				GCC_PREFIX_HEADER = MetaDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MetaDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyazhou.demo3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "ab59afe7-c387-485a-a9bc-8ed2b2516693";
+				PROVISIONING_PROFILE_SPECIFIER = ksc_wildcard_dev_sunyazhou20170522110817;
 			};
 			name = Debug;
 		};
@@ -393,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2CD9DJMEZS;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = MetaDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = MetaDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
