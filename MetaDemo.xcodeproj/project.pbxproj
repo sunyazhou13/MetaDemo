@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1C45401F130D3B0040C515 /* MediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C453F1F130D3B0040C515 /* MediaItem.m */; };
+		3F46AEFF1F2EBD3700023ACE /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AEFE1F2EBD3700023ACE /* Genre.m */; };
+		3F46AF021F2EBD5900023ACE /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF011F2EBD5900023ACE /* MetaData.m */; };
+		3F46AF051F2EBE9900023ACE /* AVMetadataItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */; };
+		3F46AF0A1F2EC43500023ACE /* MetadataDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF091F2EC43500023ACE /* MetadataDefines.m */; };
+		3F46AF0F1F2EC79A00023ACE /* DefaultMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF0E1F2EC79A00023ACE /* DefaultMetadataConverter.m */; };
+		3F46AF121F2EC81900023ACE /* ArtworkMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF111F2EC81900023ACE /* ArtworkMetadataConverter.m */; };
+		3F46AF151F2ECA8D00023ACE /* CommentMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF141F2ECA8D00023ACE /* CommentMetadataConverter.m */; };
+		3F46AF181F2ECAF800023ACE /* TrackMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF171F2ECAF800023ACE /* TrackMetadataConverter.m */; };
+		3F46AF1B1F2ECC1500023ACE /* DiscMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF1A1F2ECC1500023ACE /* DiscMetadataConverter.m */; };
+		3F46AF1E1F2ECEF500023ACE /* GenreMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF1D1F2ECEF500023ACE /* GenreMetadataConverter.m */; };
+		3F46AF211F2ED02900023ACE /* MetadataConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF201F2ED02900023ACE /* MetadataConverterFactory.m */; };
 		3F4B9E9C1EF67A110010C4DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B9E9B1EF67A110010C4DE /* main.m */; };
 		3F4B9E9F1EF67A110010C4DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B9E9E1EF67A110010C4DE /* AppDelegate.m */; };
 		3F4B9EA21EF67A110010C4DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B9EA11EF67A110010C4DE /* ViewController.m */; };
@@ -21,6 +33,31 @@
 
 /* Begin PBXFileReference section */
 		1B593CB7C8D3144B4CCA55B7 /* Pods-MetaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaDemo/Pods-MetaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3F1C453E1F130D3B0040C515 /* MediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaItem.h; path = Metadata/MediaItem.h; sourceTree = "<group>"; };
+		3F1C453F1F130D3B0040C515 /* MediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaItem.m; path = Metadata/MediaItem.m; sourceTree = "<group>"; };
+		3F46AEFD1F2EBD3700023ACE /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = Metadata/Genre.h; sourceTree = "<group>"; };
+		3F46AEFE1F2EBD3700023ACE /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = Metadata/Genre.m; sourceTree = "<group>"; };
+		3F46AF001F2EBD5900023ACE /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = Metadata/MetaData.h; sourceTree = "<group>"; };
+		3F46AF011F2EBD5900023ACE /* MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetaData.m; path = Metadata/MetaData.m; sourceTree = "<group>"; };
+		3F46AF031F2EBE9900023ACE /* AVMetadataItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVMetadataItem+Additions.h"; path = "Metadata/AVMetadataItem+Additions.h"; sourceTree = "<group>"; };
+		3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVMetadataItem+Additions.m"; path = "Metadata/AVMetadataItem+Additions.m"; sourceTree = "<group>"; };
+		3F46AF081F2EC43500023ACE /* MetadataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataDefines.h; sourceTree = "<group>"; };
+		3F46AF091F2EC43500023ACE /* MetadataDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataDefines.m; sourceTree = "<group>"; };
+		3F46AF0C1F2EC53B00023ACE /* MetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF0D1F2EC79A00023ACE /* DefaultMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF0E1F2EC79A00023ACE /* DefaultMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF101F2EC81900023ACE /* ArtworkMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtworkMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF111F2EC81900023ACE /* ArtworkMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtworkMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF131F2ECA8D00023ACE /* CommentMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF141F2ECA8D00023ACE /* CommentMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF161F2ECAF800023ACE /* TrackMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF171F2ECAF800023ACE /* TrackMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF191F2ECC1500023ACE /* DiscMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF1A1F2ECC1500023ACE /* DiscMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF1C1F2ECEF500023ACE /* GenreMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenreMetadataConverter.h; sourceTree = "<group>"; };
+		3F46AF1D1F2ECEF500023ACE /* GenreMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenreMetadataConverter.m; sourceTree = "<group>"; };
+		3F46AF1F1F2ED02900023ACE /* MetadataConverterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataConverterFactory.h; sourceTree = "<group>"; };
+		3F46AF201F2ED02900023ACE /* MetadataConverterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataConverterFactory.m; sourceTree = "<group>"; };
 		3F4B9E971EF67A110010C4DE /* MetaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4B9E9B1EF67A110010C4DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F4B9E9D1EF67A110010C4DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,9 +89,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1C453D1F130D040040C515 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				3F46AF0B1F2EC4EE00023ACE /* Converters */,
+				3F1C453E1F130D3B0040C515 /* MediaItem.h */,
+				3F1C453F1F130D3B0040C515 /* MediaItem.m */,
+				3F46AF001F2EBD5900023ACE /* MetaData.h */,
+				3F46AF011F2EBD5900023ACE /* MetaData.m */,
+				3F46AEFD1F2EBD3700023ACE /* Genre.h */,
+				3F46AEFE1F2EBD3700023ACE /* Genre.m */,
+				3F46AF031F2EBE9900023ACE /* AVMetadataItem+Additions.h */,
+				3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */,
+				3F46AF081F2EC43500023ACE /* MetadataDefines.h */,
+				3F46AF091F2EC43500023ACE /* MetadataDefines.m */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
+		3F46AF0B1F2EC4EE00023ACE /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				3F46AF0C1F2EC53B00023ACE /* MetadataConverter.h */,
+				3F46AF1F1F2ED02900023ACE /* MetadataConverterFactory.h */,
+				3F46AF201F2ED02900023ACE /* MetadataConverterFactory.m */,
+				3F46AF0D1F2EC79A00023ACE /* DefaultMetadataConverter.h */,
+				3F46AF0E1F2EC79A00023ACE /* DefaultMetadataConverter.m */,
+				3F46AF101F2EC81900023ACE /* ArtworkMetadataConverter.h */,
+				3F46AF111F2EC81900023ACE /* ArtworkMetadataConverter.m */,
+				3F46AF131F2ECA8D00023ACE /* CommentMetadataConverter.h */,
+				3F46AF141F2ECA8D00023ACE /* CommentMetadataConverter.m */,
+				3F46AF161F2ECAF800023ACE /* TrackMetadataConverter.h */,
+				3F46AF171F2ECAF800023ACE /* TrackMetadataConverter.m */,
+				3F46AF191F2ECC1500023ACE /* DiscMetadataConverter.h */,
+				3F46AF1A1F2ECC1500023ACE /* DiscMetadataConverter.m */,
+				3F46AF1C1F2ECEF500023ACE /* GenreMetadataConverter.h */,
+				3F46AF1D1F2ECEF500023ACE /* GenreMetadataConverter.m */,
+			);
+			name = Converters;
+			path = Metadata/Converters;
+			sourceTree = "<group>";
+		};
 		3F4B9E8E1EF67A110010C4DE = {
 			isa = PBXGroup;
 			children = (
+				3F1C453D1F130D040040C515 /* Metadata */,
 				3F4B9E991EF67A110010C4DE /* MetaDemo */,
 				3F4B9E981EF67A110010C4DE /* Products */,
 				C1CAC19DC422B262B0A71218 /* Pods */,
@@ -250,9 +329,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4B9EA21EF67A110010C4DE /* ViewController.m in Sources */,
+				3F46AF0F1F2EC79A00023ACE /* DefaultMetadataConverter.m in Sources */,
+				3F46AF1E1F2ECEF500023ACE /* GenreMetadataConverter.m in Sources */,
+				3F46AF181F2ECAF800023ACE /* TrackMetadataConverter.m in Sources */,
+				3F46AF0A1F2EC43500023ACE /* MetadataDefines.m in Sources */,
+				3F46AF1B1F2ECC1500023ACE /* DiscMetadataConverter.m in Sources */,
+				3F46AF211F2ED02900023ACE /* MetadataConverterFactory.m in Sources */,
+				3F46AF021F2EBD5900023ACE /* MetaData.m in Sources */,
+				3F46AEFF1F2EBD3700023ACE /* Genre.m in Sources */,
+				3F46AF151F2ECA8D00023ACE /* CommentMetadataConverter.m in Sources */,
+				3F1C45401F130D3B0040C515 /* MediaItem.m in Sources */,
 				3F4B9E9F1EF67A110010C4DE /* AppDelegate.m in Sources */,
 				3F4B9E9C1EF67A110010C4DE /* main.m in Sources */,
+				3F46AF051F2EBE9900023ACE /* AVMetadataItem+Additions.m in Sources */,
 				3F4B9ECB1EF684740010C4DE /* MetaDataViewController.m in Sources */,
+				3F46AF121F2EC81900023ACE /* ArtworkMetadataConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
