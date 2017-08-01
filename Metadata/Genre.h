@@ -6,8 +6,13 @@
 //  Copyright © 2017年 Baidu, Inc. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
 
+
+/**
+ 音频歌曲 风格  eg: 蓝调 、乡村 等
+ */
 @interface Genre : NSObject <NSCopying>
 @property (nonatomic, readonly) NSUInteger index;
 @property (nonatomic, copy, readonly) NSString *name;
