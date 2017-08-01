@@ -71,6 +71,7 @@
     NSLog(@"%@",url);
     
     MetaDataViewController *metaVC = [[MetaDataViewController alloc] initWithNibName:NSStringFromClass([MetaDataViewController class]) bundle:[NSBundle mainBundle]];
+    metaVC.url = url;
     [self.navigationController showViewController:metaVC sender:self];
 }
 - (void)didReceiveMemoryWarning {

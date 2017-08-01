@@ -35,6 +35,7 @@
 		1B593CB7C8D3144B4CCA55B7 /* Pods-MetaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaDemo/Pods-MetaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3F1C453E1F130D3B0040C515 /* MediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaItem.h; path = Metadata/MediaItem.h; sourceTree = "<group>"; };
 		3F1C453F1F130D3B0040C515 /* MediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaItem.m; path = Metadata/MediaItem.m; sourceTree = "<group>"; };
+		3F41D7A51F302A7E0064D4BA /* MetadataKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataKit.h; path = Metadata/MetadataKit.h; sourceTree = "<group>"; };
 		3F46AEFD1F2EBD3700023ACE /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = Metadata/Genre.h; sourceTree = "<group>"; };
 		3F46AEFE1F2EBD3700023ACE /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = Metadata/Genre.m; sourceTree = "<group>"; };
 		3F46AF001F2EBD5900023ACE /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = Metadata/MetaData.h; sourceTree = "<group>"; };
@@ -92,7 +93,7 @@
 		3F1C453D1F130D040040C515 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				3F46AF0B1F2EC4EE00023ACE /* Converters */,
+				3F41D7A51F302A7E0064D4BA /* MetadataKit.h */,
 				3F1C453E1F130D3B0040C515 /* MediaItem.h */,
 				3F1C453F1F130D3B0040C515 /* MediaItem.m */,
 				3F46AF001F2EBD5900023ACE /* MetaData.h */,
@@ -103,6 +104,7 @@
 				3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */,
 				3F46AF081F2EC43500023ACE /* MetadataDefines.h */,
 				3F46AF091F2EC43500023ACE /* MetadataDefines.m */,
+				3F46AF0B1F2EC4EE00023ACE /* Converters */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -157,7 +159,9 @@
 				3F4B9EA01EF67A110010C4DE /* ViewController.h */,
 				3F4B9EA11EF67A110010C4DE /* ViewController.m */,
 				3F4B9EA31EF67A110010C4DE /* Main.storyboard */,
-				3F4B9ECD1EF685070010C4DE /* UI */,
+				3F4B9EC81EF684740010C4DE /* MetaDataViewController.h */,
+				3F4B9EC91EF684740010C4DE /* MetaDataViewController.m */,
+				3F4B9ECA1EF684740010C4DE /* MetaDataViewController.xib */,
 				3F4B9EC21EF67A9E0010C4DE /* Media */,
 				3F4B9EA61EF67A110010C4DE /* Assets.xcassets */,
 				3F4B9EA81EF67A110010C4DE /* LaunchScreen.storyboard */,
@@ -174,16 +178,6 @@
 				3FCD54501EF67C420065C7BD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3F4B9ECD1EF685070010C4DE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				3F4B9EC81EF684740010C4DE /* MetaDataViewController.h */,
-				3F4B9EC91EF684740010C4DE /* MetaDataViewController.m */,
-				3F4B9ECA1EF684740010C4DE /* MetaDataViewController.xib */,
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 		58D7E6C909D31D1D57399198 /* Frameworks */ = {

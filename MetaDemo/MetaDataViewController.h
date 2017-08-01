@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MetaDataViewController : UIViewController
-@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSURL *url;
 @end

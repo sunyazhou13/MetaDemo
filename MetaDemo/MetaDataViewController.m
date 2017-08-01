@@ -7,6 +7,7 @@
 //
 
 #import "MetaDataViewController.h"
+#import "MetadataKit.h"
 
 @interface MetaDataViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -28,7 +29,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    if (self.url) {
+        MediaItem *item = [[MediaItem alloc] initWithURL:self.url];
+        [item prepareWithCompletionHandler:^(BOOL complete) {
+            NSLog(@"%@",[item modelDescription]);
+        }];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
