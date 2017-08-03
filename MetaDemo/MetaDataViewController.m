@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *trunkNumberTextField;
 @property (weak, nonatomic) IBOutlet UITextField *discNumberTextField;
 @property (weak, nonatomic) IBOutlet UIPickerView *genrePickView;
+@property (weak, nonatomic) IBOutlet UIImageView *artworkImageview;
 
 @end
 
@@ -30,11 +31,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if (self.url) {
+        __weak typeof(self) weakSelf = self;
         MediaItem *item = [[MediaItem alloc] initWithURL:self.url];
         [item prepareWithCompletionHandler:^(BOOL complete) {
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            [strongSelf refreshDataByItem:item];
             NSLog(@"%@",[item modelDescription]);
         }];
     }
+}
+
+- (void)refreshDataByItem:(MediaItem *)item{
+    self.nameTextField.text = item.metadata.name;
+    self.artistTextField.text = item.metadata.artist;
+    self.albumArtistTextField.text = item.metadata.albumArtist;
+    self.albumTextField.text = item.metadata.album;
+    self.groupingTextField.text = item.metadata.grouping;
+    self.commentsTextField.text = item.metadata.comments;
+    self.yearTextField.text = item.metadata.year;
+    self.bpmTextField.text = [item.metadata.bpm stringValue];
+    self.trunkNumberTextField.text = [item.metadata.trackNumber stringValue];
+    self.discNumberTextField.text = [item.metadata.discNumber stringValue];
+    
+    self.artworkImageview.image = item.metadata.artwork;
 }
 
 - (void)didReceiveMemoryWarning {
