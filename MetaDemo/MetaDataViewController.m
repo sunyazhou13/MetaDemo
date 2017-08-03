@@ -34,7 +34,6 @@
         [item prepareWithCompletionHandler:^(BOOL complete) {
             NSLog(@"%@",[item modelDescription]);
         }];
-        
     }
 }
 
@@ -52,5 +51,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

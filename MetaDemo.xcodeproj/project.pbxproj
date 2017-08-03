@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F1C45401F130D3B0040C515 /* MediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C453F1F130D3B0040C515 /* MediaItem.m */; };
+		3F41D7A81F3032C80064D4BA /* MetadataDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F41D7A71F3032C80064D4BA /* MetadataDefines.m */; };
 		3F46AEFF1F2EBD3700023ACE /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AEFE1F2EBD3700023ACE /* Genre.m */; };
 		3F46AF021F2EBD5900023ACE /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF011F2EBD5900023ACE /* MetaData.m */; };
 		3F46AF051F2EBE9900023ACE /* AVMetadataItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */; };
-		3F46AF0A1F2EC43500023ACE /* MetadataDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF091F2EC43500023ACE /* MetadataDefines.m */; };
 		3F46AF0F1F2EC79A00023ACE /* DefaultMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF0E1F2EC79A00023ACE /* DefaultMetadataConverter.m */; };
 		3F46AF121F2EC81900023ACE /* ArtworkMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF111F2EC81900023ACE /* ArtworkMetadataConverter.m */; };
 		3F46AF151F2ECA8D00023ACE /* CommentMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F46AF141F2ECA8D00023ACE /* CommentMetadataConverter.m */; };
@@ -36,14 +36,14 @@
 		3F1C453E1F130D3B0040C515 /* MediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaItem.h; path = Metadata/MediaItem.h; sourceTree = "<group>"; };
 		3F1C453F1F130D3B0040C515 /* MediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaItem.m; path = Metadata/MediaItem.m; sourceTree = "<group>"; };
 		3F41D7A51F302A7E0064D4BA /* MetadataKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataKit.h; path = Metadata/MetadataKit.h; sourceTree = "<group>"; };
+		3F41D7A61F3032C80064D4BA /* MetadataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetadataDefines.h; path = Metadata/MetadataDefines.h; sourceTree = "<group>"; };
+		3F41D7A71F3032C80064D4BA /* MetadataDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetadataDefines.m; path = Metadata/MetadataDefines.m; sourceTree = "<group>"; };
 		3F46AEFD1F2EBD3700023ACE /* Genre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Genre.h; path = Metadata/Genre.h; sourceTree = "<group>"; };
 		3F46AEFE1F2EBD3700023ACE /* Genre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Genre.m; path = Metadata/Genre.m; sourceTree = "<group>"; };
 		3F46AF001F2EBD5900023ACE /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaData.h; path = Metadata/MetaData.h; sourceTree = "<group>"; };
 		3F46AF011F2EBD5900023ACE /* MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetaData.m; path = Metadata/MetaData.m; sourceTree = "<group>"; };
 		3F46AF031F2EBE9900023ACE /* AVMetadataItem+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AVMetadataItem+Additions.h"; path = "Metadata/AVMetadataItem+Additions.h"; sourceTree = "<group>"; };
 		3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AVMetadataItem+Additions.m"; path = "Metadata/AVMetadataItem+Additions.m"; sourceTree = "<group>"; };
-		3F46AF081F2EC43500023ACE /* MetadataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataDefines.h; sourceTree = "<group>"; };
-		3F46AF091F2EC43500023ACE /* MetadataDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetadataDefines.m; sourceTree = "<group>"; };
 		3F46AF0C1F2EC53B00023ACE /* MetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetadataConverter.h; sourceTree = "<group>"; };
 		3F46AF0D1F2EC79A00023ACE /* DefaultMetadataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultMetadataConverter.h; sourceTree = "<group>"; };
 		3F46AF0E1F2EC79A00023ACE /* DefaultMetadataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultMetadataConverter.m; sourceTree = "<group>"; };
@@ -102,8 +102,8 @@
 				3F46AEFE1F2EBD3700023ACE /* Genre.m */,
 				3F46AF031F2EBE9900023ACE /* AVMetadataItem+Additions.h */,
 				3F46AF041F2EBE9900023ACE /* AVMetadataItem+Additions.m */,
-				3F46AF081F2EC43500023ACE /* MetadataDefines.h */,
-				3F46AF091F2EC43500023ACE /* MetadataDefines.m */,
+				3F41D7A61F3032C80064D4BA /* MetadataDefines.h */,
+				3F41D7A71F3032C80064D4BA /* MetadataDefines.m */,
 				3F46AF0B1F2EC4EE00023ACE /* Converters */,
 			);
 			name = Metadata;
@@ -326,7 +326,6 @@
 				3F46AF0F1F2EC79A00023ACE /* DefaultMetadataConverter.m in Sources */,
 				3F46AF1E1F2ECEF500023ACE /* GenreMetadataConverter.m in Sources */,
 				3F46AF181F2ECAF800023ACE /* TrackMetadataConverter.m in Sources */,
-				3F46AF0A1F2EC43500023ACE /* MetadataDefines.m in Sources */,
 				3F46AF1B1F2ECC1500023ACE /* DiscMetadataConverter.m in Sources */,
 				3F46AF211F2ED02900023ACE /* MetadataConverterFactory.m in Sources */,
 				3F46AF021F2EBD5900023ACE /* MetaData.m in Sources */,
@@ -334,6 +333,7 @@
 				3F46AF151F2ECA8D00023ACE /* CommentMetadataConverter.m in Sources */,
 				3F1C45401F130D3B0040C515 /* MediaItem.m in Sources */,
 				3F4B9E9F1EF67A110010C4DE /* AppDelegate.m in Sources */,
+				3F41D7A81F3032C80064D4BA /* MetadataDefines.m in Sources */,
 				3F4B9E9C1EF67A110010C4DE /* main.m in Sources */,
 				3F46AF051F2EBE9900023ACE /* AVMetadataItem+Additions.m in Sources */,
 				3F4B9ECB1EF684740010C4DE /* MetaDataViewController.m in Sources */,

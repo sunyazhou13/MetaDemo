@@ -18,8 +18,12 @@
     if ([item.value isKindOfClass:[NSString class]]) {                      // 1
         NSArray *components =
         [item.stringValue componentsSeparatedByString:@"/"];
-        number = @([components[0] integerValue]);
-        count = @([components[1] integerValue]);
+        if (components.count > 0) {
+            number = @([components[0] integerValue]);
+        }
+        if (components.count > 1) {
+            count = @([components[1] integerValue]);
+        }
     }
     else if ([item.value isKindOfClass:[NSData class]]) {                   // 2
         NSData *data = item.dataValue;
