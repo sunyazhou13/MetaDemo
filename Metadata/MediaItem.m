@@ -130,12 +130,15 @@
                 handler(success);
             });
         }
+        NSLog(@"sessionError:%@",session.error);
     }];
 }
 
 
 - (NSURL *)tempURL {
-    NSString *tempDir = NSTemporaryDirectory();
+    // 获取Caches目录路径
+    NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *tempDir = cachesDir;
     NSString *ext = [[self.url lastPathComponent] pathExtension];
     NSString *tempName = [NSString stringWithFormat:@"temp.%@", ext];
     NSString *tempPath = [tempDir stringByAppendingPathComponent:tempName];

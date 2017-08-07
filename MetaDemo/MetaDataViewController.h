@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol MetaDataViewControllerDelegate <NSObject>
+@optional
+- (void)needReload;
+@end
+
 @interface MetaDataViewController : UIViewController
 @property (nonatomic, copy) NSURL *url;
+@property (nonatomic, weak) id <MetaDataViewControllerDelegate> delegate;
 @end

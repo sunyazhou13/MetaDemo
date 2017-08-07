@@ -23,7 +23,7 @@
 @property (strong) Genre *genre;
 
 @property NSString *year;
-@property NSNumber *bpm;
+@property id bpm;
 @property NSNumber *trackNumber;
 @property NSNumber *trackCount;
 @property NSNumber *discNumber;

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "MetaDataViewController.h"
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource,MetaDataViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic, strong) NSMutableArray *urls;
 @end
@@ -28,6 +28,9 @@
 }
 
 - (void)loadData {
+    if (self.urls) {
+        [self.urls removeAllObjects];
+    }
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
     NSString * mediasPath = [resourcePath stringByAppendingPathComponent:@"Media"];
@@ -72,8 +75,16 @@
     
     MetaDataViewController *metaVC = [[MetaDataViewController alloc] initWithNibName:NSStringFromClass([MetaDataViewController class]) bundle:[NSBundle mainBundle]];
     metaVC.url = url;
+    metaVC.delegate = self;
     [self.navigationController showViewController:metaVC sender:self];
 }
+
+#pragma mark -
+#pragma mark - MetaDataViewControllerDelegate
+- (void)needReload{
+    [self loadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
