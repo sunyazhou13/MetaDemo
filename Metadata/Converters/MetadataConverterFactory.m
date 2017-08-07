@@ -7,13 +7,11 @@
 //
 
 #import "MetadataConverterFactory.h"
-
 #import "ArtworkMetadataConverter.h"
 #import "CommentMetadataConverter.h"
 #import "DiscMetadataConverter.h"
 #import "GenreMetadataConverter.h"
 #import "TrackMetadataConverter.h"
-
 #import "MetadataDefines.h"
 
 @implementation MetadataConverterFactory
