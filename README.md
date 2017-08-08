@@ -1,15 +1,4 @@
 # [博客地址](http://www.sunyazhou.com/2017/08/07/Learning-AV-Foundation-AVAsset-Senior/)
----
-title: Learning AV Foundation(四)AVAsset元数据(高级篇)
-categories: iOS开发
-tags:
-  - iOS开发
-  - macOS开发
-  - Learning AV Foundation
-date: 2017-08-07 20:36:46
----
-
-![](https://raw.githubusercontent.com/sunyazhou13/sunyazhou13.github.io-images/684038b04b8ff1f2ed00e9b76f8bd02e8e243726/Learning-AV-Foundation-AVAsset-Senior3.2/audio-artwork.jpg)
 
 # 前言
 
