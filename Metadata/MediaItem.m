@@ -21,7 +21,7 @@
 @end
 
 @implementation MediaItem
-- (id)initWithURL:(NSURL *)url {
+- (instancetype)initWithURL:(NSURL *)url {
     self = [super init];
     if (self) {
         _url = url;
@@ -37,6 +37,31 @@
     }
     return self;
 }
+
+
+- (instancetype)initWithAVAsset:(AVAsset *)asset{
+    if (self) {
+        _asset = asset;
+        _url = [self urlOfAVAsset:asset];
+        _filename = [self.url lastPathComponent];
+        _filetype = [self fileTypeForURL:self.url];
+        _editable = ![_filetype isEqualToString:AVFileTypeMPEGLayer3];
+        _acceptedFormats = @[
+                             AVMetadataFormatQuickTimeMetadata,
+                             AVMetadataFormatiTunesMetadata,
+                             AVMetadataFormatID3Metadata
+                             ];
+    }
+    return self;
+}
+
+-(NSURL *)urlOfAVAsset:(AVAsset *)currentPlayerAsset{
+    // make sure the current asset is an AVURLAsset
+    if (![currentPlayerAsset isKindOfClass:AVURLAsset.class]) return nil;
+    // return the NSURL
+    return [(AVURLAsset *)currentPlayerAsset URL];
+}
+
 
 - (NSString *)fileTypeForURL:(NSURL *)url {
     NSString *ext = [[self.url lastPathComponent] pathExtension];

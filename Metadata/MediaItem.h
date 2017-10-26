@@ -15,7 +15,24 @@ typedef void(^CompletionHandler)(BOOL complete);
 @property (strong, readonly) NSString *filetype;
 @property (strong, readonly) MetaData *metadata;
 @property (readonly, getter = isEditable) BOOL editable;
-- (id)initWithURL:(NSURL *)url;
+
+
+/**
+ 通过 URL 构建
+
+ @param url url
+ @return 实例
+ */
+- (instancetype)initWithURL:(NSURL *)url;
+
+
+/**
+ 通过 AVAsset 构建
+
+ @param asset AVAsset
+ @return 实例
+ */
+- (instancetype)initWithAVAsset:(AVAsset *)asset;
 /**
  此方法完成之后如果成功即可取metadata
 
